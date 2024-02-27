@@ -18,6 +18,22 @@ function toCapital() {
 
 toCapital();
 
+// Q3
+const arr = [1, 0, 5, 2, 1, 0, 2, 1, 4, 3, 5, 3, 4, 4];
+const newArray = [];
+let result2;
+function removeDuplicate(array1) {
+  array1.forEach((idx) => {
+    if (!newArray.includes(idx)) {
+      newArray.push(idx);
+    }
+  });
+  return newArray;
+}
+
+const op1 = removeDuplicate(arr);
+console.log("Unique Array", op1);
+
 //Q4
 const arr1 = [1, 2, 3, 4, 5, 6, 7];
 let sum = 0;
@@ -85,9 +101,11 @@ let result;
 function filterAdults(array) {
   array.forEach((items) => {
     if (items.age > 18) {
-      return console.log(items.name);
+      // result = console.log(items.name);
+      result = console.log(items.name);
     }
   });
+  return result;
 }
 
 const output = filterAdults(arr2);
