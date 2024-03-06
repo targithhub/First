@@ -12,5 +12,5 @@ const p1 = new Promise((resovle, reject) => {
   }, 2000);
 });
 
-// console.log(p1);
+console.log(p1);
 p1.then((res) => console.log(res)).catch((err) => console.log(err));
