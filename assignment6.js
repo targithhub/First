@@ -168,6 +168,25 @@ let indianRecipes = [
   },
 ];
 
+function findRecipesByIngredient(recipe, ing) {
+  let newArray = [];
+  let searchObject = recipe.forEach((item) => {
+    if (item.ingredients.includes(ing)) {
+      newArray.push(item);
+    }
+  });
+  return newArray;
+}
+
+const output = findRecipesByIngredient(
+  indianRecipes,
+  "chickpeas",
+  "onion",
+  "tomato"
+);
+
+console.log(output);
+
 function filterRecipe(cat) {
   const getRecipe = indianRecipes.filter((item) => {
     item.category = cat;
