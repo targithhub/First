@@ -102,8 +102,39 @@ let getFruit = fruits.find((data) => {
   if (data.includes("a")) console.log(data);
 });
 
-//Q10
+//Q9
+const cart = [
+  {
+    name: "Laptop",
+    price: 999.99,
+    quantity: 1,
+  },
+  {
+    name: "Headphones",
+    price: 149.99,
+    quantity: 2,
+  },
+  {
+    name: "Mouse",
+    price: 29.99,
+    quantity: 3,
+  },
+];
 
+function calculateTotalPrice(array) {
+  let gtotal = 0;
+  const getData = array.find((item) => {
+    item.totalPrice = item.quantity * item.price;
+    console.log("Total Price is ", item.totalPrice);
+    gtotal = gtotal + item.totalPrice;
+  });
+  return gtotal;
+}
+
+const op5 = calculateTotalPrice(cart);
+console.log("Grand Total is: ", op5);
+
+//Q10
 let indianRecipes = [
   {
     name: "Paneer Tikka Masala",
