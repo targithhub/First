@@ -1,0 +1,51 @@
+<head>
+    <title>Registration Form</title>
+    <!-- <link rel ="stylesheet" href="register.css" /> -->
+    <style>
+        body {
+  background-color: rgb(63, 3, 5);
+}
+h1 {
+  border: 1p solid black;
+  background: linear-gradient(135deg, pink, rgb(192, 0, 192),rgb(103, 103, 242), aqua);
+  border-radius: 10px;
+  width: 300px;
+}
+
+#form {
+  background-color: rgb(248, 238, 198);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  height: 300px;
+  width: 400;
+}
+
+#sub {
+  background-color: rgb(247, 169, 73);
+  border-radius: 5px;
+  font-size: 20px;
+}
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Registration Form</h1>
+   
+      <form id="form" >
+    First Name: &nbsp  &nbsp <input type="text" required placeholder="First Name"  name="fname"  id="fname" /> </br> </br>
+    Last Name: &nbsp  &nbsp <input type="text" required placeholder="Last Name"  name="lname"  id="lname" /> </br> </br>
+    User Name: &nbsp  &nbsp <input type="text" required placeholder="User name"  name="uname"  id="uname" /></br></br>
+    Password: &nbsp  &nbsp  &nbsp &nbsp<input type="password" required placeholder="Password"  name="pwd"  id="pwd" /></br></br>
+    Confirm Password: <input type="password" required placeholder="Confirm Password"  name="cpwd"  id="cpwd" /></br></br>
+    Age: &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  <input type="text" required placeholder="Age"  name="age"  id="age" /></br></br>
+    Address: &nbsp  &nbsp &nbsp  &nbsp &nbsp<input type="text" required placeholder="Address"  name="address"  id="address" /></br></br>
+
+        <input id ="sub" type="submit" value="Register" />
+        
+      </form>
+    </center>
+    
+  </body>
+  <script src="registration.js"></script>
+</html>

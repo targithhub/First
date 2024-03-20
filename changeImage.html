@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Image</title>
+    <style>
+      div {
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        height: 200px;
+        width: 200px;
+      }
+      h2 {
+        text-align: center;
+      }
+      button{
+        text-align: center;
+        margin:10px;
+        font-size: 40px;
+        border-radius: 20px;
+        padding:10px;
+        height: 100px;
+        width:200px;
+      }
+
+      #happy{
+        background-color: rgb(255, 196, 0);
+      }
+      #sad{
+        background-color: rgb(253, 62, 48);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Change Image</h2>
+    <div>
+        <img src="./images/smile.png" id="image" onclick="changeImage()" /><br><br>
+       
+    </div>
+    <br><br>
+    <div>
+    <button id="happy" onclick="changeHappy()" >Happy
+    </button>
+    
+    <button id="sad" onclick="changeSad()" >Sad</button>
+    </button>
+</div>
+    <script src="changeImage.js"></script>
+  </body>
+</html>
