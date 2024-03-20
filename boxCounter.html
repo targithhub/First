@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: bisque;
+        background-size: cover;
+        background-position: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        font-size: 50px;
+        text-align: center;
+        border-radius: 30px;
+        padding-top: 20px;
+        cursor: pointer;
+      }
+
+      #b1 {
+        background-color: rgb(166, 32, 32);
+      }
+
+      #b2 {
+        background-color: green;
+      }
+
+      #b3 {
+        background-color: rgb(102, 102, 242);
+      }
+      p {
+        font-size: 60px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <center><h2>Box Counter</h2></center>
+    <div class="container">
+      <div class="box" id="b1" onclick="addOne()">1</div>
+      <div class="box" id="b2" onclick="addThree()">3</div>
+      <div class="box" id="b3" onclick="addFive()">5</div>
+    </div>
+    <center><p id="p1">0</p></center>
+
+    <script src="boxCounter.js"></script>
+  </body>
+</html>
