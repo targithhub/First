@@ -7,7 +7,7 @@ const AffordableProducts = (props) => {
           <p>
             {item.price < 50
               ? item.name && item.price
-              : "This product price more than 50"}
+              : "This product price is not more than 50"}
           </p>
         );
       })}
