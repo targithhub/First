@@ -4,6 +4,8 @@ import ProductInfo from "./ProductInfo";
 import WeatherMsg from "./WeatherMsg";
 import ProductList from "./ProductList";
 import Employee from "./Employee";
+import AffordableProducts from "./AffordableProducts";
+import Counter from "./Counter";
 
 function App() {
   const productList = [
@@ -50,12 +52,46 @@ function App() {
       salary: "Rs 65000",
     },
   ];
+
+  const productsArray = [
+    {
+      id: 101,
+      name: "Pen",
+      price: 25,
+    },
+
+    {
+      id: 102,
+      name: "Notebook",
+      price: 45,
+    },
+
+    {
+      id: 103,
+      name: "Book",
+      price: 250,
+    },
+
+    {
+      id: 104,
+      name: "Reference Book",
+      price: 450,
+    },
+
+    {
+      id: 105,
+      name: "Marker",
+      price: 40,
+    },
+  ];
   return (
     <div className="App">
       <ProductInfo productName="Laptop" price="$900"></ProductInfo>
       <WeatherMsg isSunny="false"></WeatherMsg>
       <Employee employeeData={empData}></Employee>
       <ProductList products={productList}></ProductList>  
+      <AffordableProducts products={productsArray}></AffordableProducts>
+      <Counter></Counter>
     </div>
   );
 }
