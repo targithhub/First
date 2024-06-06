@@ -67,7 +67,6 @@ const deleteBlog = async (req, res) => {
 };
 
 //like Blog
-
 const likeTheBlog = async (req, res) => {
   try {
     const requestData = req.body;
